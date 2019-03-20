@@ -13,7 +13,7 @@ resource "null_resource" "init" {
   # Configure Kubernetes
   #####################################################################
   provisioner "local-exec" {
-    command = "gcloud container clusters get-credentials rubix-cluster --zone=${google_container_cluster.my-project.zone}"
+    command = "gcloud container clusters get-credentials rubix-cluster --zone=${google_container_cluster.rubix.zone}"
   }
   #####################################################################
   # Role Permissions
