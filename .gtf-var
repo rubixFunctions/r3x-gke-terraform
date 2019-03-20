@@ -1,0 +1,10 @@
+export TF_VAR_project=r3x-showcase-42
+export PROJECT=r3x-showcase-42
+export TF_VAR_region=europe-west2
+export TF_VAR_credentials=/Users/ciaranroche/.gcd/rubix.json
+export TF_VAR_cluster_name=rubix-cluster
+export CLUSTER_NAME=rubix-cluster
+export TF_VAR_cluster_zone=europe-west2-a
+export CLUSTER_ZONE=europe-west2-a
+export TF_VAR_node_pool_name=rubix-node-pool
+export TF_VAR_node_pool_zone=europe-west2-a
