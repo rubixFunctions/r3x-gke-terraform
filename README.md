@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/-Apache%202.0-blue.svg)](https://opensource.org/s/Apache-2.0)
 
 ## Usage
-It is assumed you have [Terraform](), [gcloud]() and [kubectl]() installed locally. Also ensure you have billing enabled in GKE.
+It is assumed you have [Terraform](https://www.terraform.io), [gcloud](https://cloud.google.com/sdk/gcloud/) and [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) installed locally. Also ensure you have billing enabled in GKE.
 
 1. Clone this repo:
 ```
