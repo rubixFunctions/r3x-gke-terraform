@@ -9,19 +9,19 @@ $ git clone git@github.com:rubixFunctions/r3x-gke-terraform.git
 $ cd r3x-gke-terraform
 ```
 
-1. Edit env vars in `.gtf-var` to suit your cluster. Once done run:
+2. Edit env vars in `.gtf-var` to suit your cluster. Once done run:
 ```
 $ source .gtf-var
 ```
 
-1. Run the following to execute the terraform:
+3. Run the following to execute the terraform:
 ```
 $ terraform init
 $ terraform plan
 $ terraform apply
 ```
 
-1. To ensure all knative services have been applied run the following:
+4. To ensure all knative services have been applied run the following:
 ```
 $ kubectl get pods --namespace istio-system
 $ kubectl get pods --namespace knative-serving
@@ -31,7 +31,7 @@ $ kubectl get pods --namespace knative-sources
 $ kubectl get pods --namespace knative-monitoring
 ```
 
-1. To allow outbound traffic run the following:
+5. To allow outbound traffic run the following:
 ```
 $ gcloud container clusters describe ${CLUSTER_NAME} \
   --zone=${CLUSTER_ZONE} | grep -e clusterIpv4Cidr -e servicesIpv4Cidr
